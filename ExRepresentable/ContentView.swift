@@ -21,7 +21,7 @@ struct ContentView: View {
         Text("Open Activity")
       }
       .sheet(isPresented: $isActivityViewOpend, onDismiss: {
-          print("Dismiss")
+        print("Dismiss")
       }, content: {
         MyActivityView(activityItems: [uiImage])
       })
